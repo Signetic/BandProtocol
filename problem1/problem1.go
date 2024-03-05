@@ -24,7 +24,7 @@ func bossBaby(shots string) string {
 			lenS++
 		}
 	}
-	if lenR <= lenS {
+	if lenR < lenS {
 		return strBad
 	}
 	return strGood
@@ -36,4 +36,6 @@ func main() {
 	fmt.Println(str2)
 	str3 := bossBaby("SSSRRRRS")
 	fmt.Println(str3)
+	str4 := bossBaby("SR")
+	fmt.Println(str4)
 }
